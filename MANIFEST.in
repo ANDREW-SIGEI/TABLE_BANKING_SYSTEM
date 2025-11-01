@@ -1,0 +1,7 @@
+include requirements.txt
+include README.md
+include *.json
+include *.txt
+recursive-include tablebanking/public *
+recursive-include tablebanking/templates *
+recursive-include tablebanking/www *

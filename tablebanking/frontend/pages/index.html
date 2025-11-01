@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Banking - Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-xl font-bold"><i class="fas fa-piggy-bank mr-2"></i>Table Banking</h1>
+            <button onclick="logout()" class="bg-blue-700 px-4 py-2 rounded">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded shadow">
+                <i class="fas fa-users text-blue-600 text-2xl mb-2"></i>
+                <h3 class="text-gray-500">Total Groups</h3>
+                <p id="totalGroups" class="text-2xl font-bold">0</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <i class="fas fa-user-friends text-green-600 text-2xl mb-2"></i>
+                <h3 class="text-gray-500">Total Members</h3>
+                <p id="totalMembers" class="text-2xl font-bold">0</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <i class="fas fa-hand-holding-usd text-yellow-600 text-2xl mb-2"></i>
+                <h3 class="text-gray-500">Active Loans</h3>
+                <p id="activeLoans" class="text-2xl font-bold">0</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button class="bg-white p-4 rounded shadow text-center">
+                <i class="fas fa-user-plus text-blue-600 text-2xl mb-2"></i>
+                <p>Register Member</p>
+            </button>
+            <button class="bg-white p-4 rounded shadow text-center">
+                <i class="fas fa-hand-holding-usd text-green-600 text-2xl mb-2"></i>
+                <p>Apply Loan</p>
+            </button>
+            <button class="bg-white p-4 rounded shadow text-center">
+                <i class="fas fa-piggy-bank text-yellow-600 text-2xl mb-2"></i>
+                <p>Record Savings</p>
+            </button>
+            <button class="bg-white p-4 rounded shadow text-center">
+                <i class="fas fa-calendar text-purple-600 text-2xl mb-2"></i>
+                <p>Schedule Meeting</p>
+            </button>
+        </div>
+    </div>
+
+    <script src="/assets/tablebanking/js/dashboard.js"></script>
+</body>
+</html>
